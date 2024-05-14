@@ -1,0 +1,112 @@
+p{
+    font-family: Roboto;
+}
+.title_1{
+    font-size: 60px;
+    font-weight: bold;
+    color: #0F319E;
+    margin-bottom: -60px;
+}
+.title_2{
+    font-size: 60px;
+}
+.title_box{
+    text-align: center;
+}
+#student_info_box{
+    display: flex;
+    width: 525px;
+    height: 259px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+}
+#avatar{
+    width: 165px;
+    height: 165px;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.highlight_text{
+    color: #000;
+    font-family: "Source Sans 3";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.normal_text{
+    color: #000;
+    font-family: "Source Sans 3";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+#student_info_class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+.student_att_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    width: 79%;
+}
+#student_class{
+    display: flex;
+    width: 885px;
+    height: 259px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+}
+td{
+    padding: 10px 40px;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    gap: 10px;
+    flex: 1 0 0;
+    color: #000;
+    font-family: "Source Sans 3";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+th{
+    color: #FFF;
+    font-family: "Source Sans 3";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background-color: #0F319E;
+}
+table{
+    padding: 10px 0px;
+    width: 100%;
+}

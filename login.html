@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student System</title>
+    <link rel="stylesheet" href="login_styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login Page</a></li>
+                <li><a href="student_info.html">Student Info Page</a></li>
+                <li><a href="teacher_info.html">Teacher Info Page</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class = "title_box">
+            <p class="title_1">Future.<br>
+            <p class="title_2">Attendance System<br></p>
+        </div>
+        <img src="Logo-DH-Cong-Nghe-Thong-Tin-UIT-V.webp" type="image/webp" id="school_logo">
+        <div class = "login_box">
+            <p class="login_title">Please enter your student/lecturer account<br></p>
+            <div>
+                <form id="login-form">
+                    <input type="text" id="student_id" name="student_id" placeholder="Your ID">
+                    <input type="text" id="student_password" name="student_password" placeholder="Your Password">
+                    <button id="check_button">Check</button>
+                </form>
+                <p id="login-status"></p>
+            </div>  
+        </div>
+    </main>
+    <script src="login_logic.js"></script>
+</body>
+</html>
