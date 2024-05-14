@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student System</title>
-    <link rel="stylesheet" href="student_info_styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="login.html">Login Page</a></li>
-                <li><a href="student_info.html">Student Info Page</a></li>
-                <li><a href="teacher_info.html">Teacher Info Page</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class = "title_box">
-            <p class="title_1">Future.<br>
-            <p class="title_2">Attendance System<br></p>
-        </div>
-        <div id="student_info_class">
-            <div id="student_info_box">
-                <div style="display:inline"> <img src="2feefddd63f3952d0ab17b1982dff888.png" type="image/png" id="avatar"></div>
-                <div>
-                    <p class="highlight_text" id="student_name" style="margin-bottom: 25px;"></p>
-                    <p class="normal_text"id="student_id"></p>
-                    <p class="normal_text" id="class_id"></p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student System</title>
+        <link rel="stylesheet" href="student_info_styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="login.html">Login Page</a></li>
+                    <li><a href="student_info.html">Student Info Page</a></li>
+                    <li><a href="teacher_info.html">Teacher Info Page</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="title_box">
+                <p class="title_1">Future.<br>
+                    <p class="title_2">Attendance System<br></p>
                 </div>
-            </div>
-            <div id="student_class">
-                <p class="highlight_text" style="margin-top: 20px;margin-bottom: 20px;">Course</p>
-                <div id="course_data" style="width: 100%;"></div>
-            </div>
-            <div class="student_att_box" id="attendance_data"></div>
-        </div>
-    </main>
-    <script src="student_logic.js"></script>
-</body>
-</html>
+                <div id="student_info_class">
+                    <div id="student_info_box">
+                        <div style="display:inline"> <img
+                                src="2feefddd63f3952d0ab17b1982dff888.png"
+                                type="image/png" id="avatar"></div>
+                        <div>
+                            <p class="highlight_text" id="student_name"
+                                style="margin-bottom: 25px;"></p>
+                            <p class="normal_text" id="student_id"></p>
+                            <p class="normal_text" id="class_id"></p>
+                        </div>
+                    </div>
+                    <div id="student_class">
+                        <p class="highlight_text"
+                            style="margin-top: 20px;margin-bottom: 20px;">Course</p>
+                        <div id="course_data" style="width: 100%;"></div>
+                    </div>
+                    <div class="student_att_box" id="attendance_data"></div>
+                </div>
+            </main>
+            <script src="student_logic.js"></script>
+        </body>
+    </html>

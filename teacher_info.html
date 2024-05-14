@@ -1,53 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student System</title>
-    <link rel="stylesheet" href="teacher_info_styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="login.html">Login Page</a></li>
-                <li><a href="student_info.html">Student Info Page</a></li>
-                <li><a href="teacher_info.html">Teacher Info Page</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main >
-        <div class = "title_box">
-            <p class="title_1">Future.<br>
-            <p class="title_2">Attendance System<br></p>
-        </div>
-        <div style="display: flex;
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student System</title>
+        <link rel="stylesheet" href="teacher_info_styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="login.html">Login Page</a></li>
+                    <li><a href="student_info.html">Student Info Page</a></li>
+                    <li><a href="teacher_info.html">Teacher Info Page</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="title_box">
+                <p class="title_1">Future.<br>
+                    <p class="title_2">Attendance System<br></p>
+                </div>
+                <div style="display: flex;
         justify-content: center;
         align-items: center;
         align-content: center;">
-            <div style="width: 80%;
+                    <div style="width: 80%;
             justify-content: center;
             align-items: center;
             align-content: center;">
-                <div style="text-align: center;"><p style="color: #000;
+                        <div style="text-align: center;"><p style="color: #000;
                     font-family: 'Source Sans 3';
                     font-size: 36px;
                     font-style: normal;
                     font-weight: 300;
                     line-height: normal;" id="greeting_teacher"></p></div>
-                <div style="display: flex;">
-                    <div style="width: 30%;">
-                        <div class="cover_container" style="height: 400px;width: 95%;" id="teacher_course_data">
-                        </div>
-                        <div class="cover_container" style="height: 200px;width: 95%;margin-top: 25px;" id="date_table_body">
+                        <div style="display: flex;">
+                            <div style="width: 30%;">
+                                <div class="cover_container"
+                                    style="height: 400px;width: 95%;"
+                                    id="teacher_course_data">
+                                </div>
+                                <div class="cover_container"
+                                    style="height: 200px;width: 95%;margin-top: 25px;"
+                                    id="date_table_body">
+                                </div>
+                            </div>
+                            <div style="width: 70%; height: 630px;"
+                                class="cover_container"
+                                id="teacher_attendance_data">
+                            </div>
                         </div>
                     </div>
-                    <div style="width: 70%; height: 630px;" class="cover_container" id="teacher_attendance_data">
-                    </div>
-            </div>
-            </div>
-        </div>
-    </main>
-    <script src="teacher_logic.js"></script>
-</body>
-</html>
+                </div>
+            </main>
+            <script src="teacher_logic.js"></script>
+        </body>
+    </html>

@@ -1,9 +1,11 @@
 @font-face {
-    font-family: 'Roboto'; /*a name to be used later*/
+    font-family: 'Roboto';
+    /*a name to be used later*/
     src: url('Roboto/Roboto-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-#newfont{
-    font-family:'Roboto';
+
+#newfont {
+    font-family: 'Roboto';
 }

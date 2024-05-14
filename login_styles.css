@@ -1,24 +1,29 @@
-p{
+p {
     font-family: Roboto;
 }
-.title_1{
+
+.title_1 {
     font-size: 60px;
     font-weight: bold;
     color: #0F319E;
     margin-bottom: -60px;
 }
-.title_2{
+
+.title_2 {
     font-size: 60px;
 }
-.title_box{
+
+.title_box {
     text-align: center;
 
 }
-.login_box{
+
+.login_box {
     text-align: center;
-    
+
 }
-.login_title{
+
+.login_title {
     color: #4B3B3B;
     font-family: "Source Sans 3";
     font-size: 40px;
@@ -27,26 +32,32 @@ p{
     margin-bottom: 10px;
     line-height: normal;
 }
-input[type=text]{
+
+input[type=text] {
     border-radius: 10px;
     border: 1px solid #C9C9C9;
     height: 61px;
     text-indent: 5px;
 }
-input[type=text]:hover{
+
+input[type=text]:hover {
     box-shadow: 0 0 5pt 0.5pt #D3D3D3;
-  }
-  input[type=text]:focus {
+}
+
+input[type=text]:focus {
     box-shadow: 0 0 5pt 2pt #D3D3D3;
     outline-width: 0px;
-  }
-#student_id{
+}
+
+#student_id {
     width: 303px;
 }
-#student_password{
+
+#student_password {
     width: 513px;
 }
-::placeholder{
+
+::placeholder {
     color: #BEBEBE;
     text-align: center;
     font-size: medium;
@@ -57,7 +68,8 @@ input[type=text]:hover{
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-#check_button{
+
+#check_button {
     border-radius: 20px;
     border: 1px solid #C9C9C9;
     background-color: #0F319E;
@@ -67,10 +79,12 @@ input[type=text]:hover{
     color: #FFF;
     font-size: medium;
 }
-#check_button:hover{
+
+#check_button:hover {
     box-shadow: 0 0 5pt 0.5pt #D3D3D3;
 }
-#school_logo{
+
+#school_logo {
     height: 300px;
     width: 300px;
     display: block;

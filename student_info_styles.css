@@ -1,19 +1,23 @@
-p{
+p {
     font-family: Roboto;
 }
-.title_1{
+
+.title_1 {
     font-size: 60px;
     font-weight: bold;
     color: #0F319E;
     margin-bottom: -60px;
 }
-.title_2{
+
+.title_2 {
     font-size: 60px;
 }
-.title_box{
+
+.title_box {
     text-align: center;
 }
-#student_info_box{
+
+#student_info_box {
     display: flex;
     width: 525px;
     height: 259px;
@@ -25,7 +29,8 @@ p{
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.20);
 }
-#avatar{
+
+#avatar {
     width: 165px;
     height: 165px;
     border-radius: 100%;
@@ -33,7 +38,8 @@ p{
     margin-right: auto;
     display: block;
 }
-.highlight_text{
+
+.highlight_text {
     color: #000;
     font-family: "Source Sans 3";
     font-size: 40px;
@@ -41,7 +47,8 @@ p{
     font-weight: 700;
     line-height: normal;
 }
-.normal_text{
+
+.normal_text {
     color: #000;
     font-family: "Source Sans 3";
     font-size: 24px;
@@ -51,7 +58,8 @@ p{
     margin-top: 0px;
     margin-bottom: 25px;
 }
-#student_info_class{
+
+#student_info_class {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +68,8 @@ p{
     flex-shrink: 0;
     flex-wrap: wrap;
 }
-.student_att_box{
+
+.student_att_box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,7 +81,8 @@ p{
     border: 1px solid rgba(0, 0, 0, 0.20);
     width: 79%;
 }
-#student_class{
+
+#student_class {
     display: flex;
     width: 885px;
     height: 259px;
@@ -83,7 +93,8 @@ p{
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.20);
 }
-td{
+
+td {
     padding: 10px 40px;
     justify-content: center;
     align-items: start;
@@ -97,7 +108,8 @@ td{
     font-weight: 400;
     line-height: normal;
 }
-th{
+
+th {
     color: #FFF;
     font-family: "Source Sans 3";
     font-size: 32px;
@@ -106,7 +118,8 @@ th{
     line-height: normal;
     background-color: #0F319E;
 }
-table{
+
+table {
     padding: 10px 0px;
     width: 100%;
 }

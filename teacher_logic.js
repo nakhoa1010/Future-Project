@@ -1,40 +1,40 @@
 const teacher_info = "Nguyen Minh Son";
 const attendance_data = [
-    ["CS103", "Tran Gia Kiet", "30-4-2024 3:45", "Attend" ],
-    ["CS103", "Vu Ho C", "30-4-2024 3:45", "Attend" ],
-    ["CS103", "Van Duy D", "30-4-2024 3:45", "Attend" ],
-    ["CS103", "Nguyen Huu Minh Tam", "null", "Absent" ],
-    ["CS106", "Tran Gia Kiet", "07-05-2024 3:45", "Attend" ],
-    ["CS106", "Van Duy D", "07-05-2024 1:45", "Attend" ],
-    ["CS106", "Vu Ho C", "07-05-2024 2:45", "Attend" ],
-    ["CS106", "Nguyen Huu Minh Tam", "07-05-2024 4:45", "Attend" ],
-    ["CS109", "Tran Gia Kiet", "14-05-2024 1:30", "Attend" ],
-    ["CS109", "Van Duy D", "14-05-2024 3:45", "Attend" ],
-    ["CS109", "Vu Ho C", "null", "Absent" ],
-    ["CS109", "Nguyen Huu Minh Tam", "14-05-2024 2:00", "Attend" ],
+    ["CS103", "Tran Gia Kiet", "30-4-2024 3:45", "Attend"],
+    ["CS103", "Vu Ho C", "30-4-2024 3:45", "Attend"],
+    ["CS103", "Van Duy D", "30-4-2024 3:45", "Attend"],
+    ["CS103", "Nguyen Huu Minh Tam", "null", "Absent"],
+    ["CS106", "Tran Gia Kiet", "07-05-2024 3:45", "Attend"],
+    ["CS106", "Van Duy D", "07-05-2024 1:45", "Attend"],
+    ["CS106", "Vu Ho C", "07-05-2024 2:45", "Attend"],
+    ["CS106", "Nguyen Huu Minh Tam", "07-05-2024 4:45", "Attend"],
+    ["CS109", "Tran Gia Kiet", "14-05-2024 1:30", "Attend"],
+    ["CS109", "Van Duy D", "14-05-2024 3:45", "Attend"],
+    ["CS109", "Vu Ho C", "null", "Absent"],
+    ["CS109", "Nguyen Huu Minh Tam", "14-05-2024 2:00", "Attend"],
 ];
 
 let temp_attendance_data = attendance_data;
-const teacher_course = ["CS103","CS106","CS109"];
-const attendance_header = ["Student Name","Check-in Time","Status"];
+const teacher_course = ["CS103", "CS106", "CS109"];
+const attendance_header = ["Student Name", "Check-in Time", "Status"];
 teacher_greeting = document.getElementById("greeting_teacher");
 teacher_greeting.innerHTML = "Hi, Mr " + teacher_info;
 
 //Teacher Attendance Data
-function generateAttendanceData(data,headerData){
+function generateAttendanceData(data, headerData) {
     let table = document.createElement("table");
-    
+
     let header_row = document.createElement("tr");
-    headerData.forEach(function(cellData){
+    headerData.forEach(function (cellData) {
         let header_cell = document.createElement("th");
         header_cell.textContent = cellData;
         header_cell.style.width = "33%";
         header_row.appendChild(header_cell);
     })
-    table.appendChild(header_row);  
-    data.forEach(function(rowData) {
+    table.appendChild(header_row);
+    data.forEach(function (rowData) {
         let row = document.createElement("tr");
-        rowData.slice(1).forEach(function(cellData){
+        rowData.slice(1).forEach(function (cellData) {
             let cell = document.createElement("td");
             cell.textContent = cellData;
             cell.style.width = "33%";
@@ -46,15 +46,15 @@ function generateAttendanceData(data,headerData){
     return table;
 }
 //Teacher Course
-function generateTeacherCourseData(data){
+function generateTeacherCourseData(data) {
     let table = document.createElement("table");
-    data.forEach(function(rowData) {
+    data.forEach(function (rowData) {
         let row = document.createElement("tr");
         let cell = document.createElement("td");
         let button = document.createElement("button");
         button.textContent = rowData;
-        button.addEventListener("click",function(){
-            selectElement("list1",button);
+        button.addEventListener("click", function () {
+            selectElement("list1", button);
         })
         cell.appendChild(button);
         row.appendChild(cell);
@@ -68,7 +68,7 @@ function generateTeacherCourseData(data){
 const startDate = new Date(2024, 3, 30);
 const endDate = new Date(2024, 4, 14);
 
-function generateTeachingDate(startDate,endDate){
+function generateTeachingDate(startDate, endDate) {
     let tableBody = document.createElement("table");
 
     for (let date = startDate; date <= endDate; date.setDate(date.getDate() + 7)) {
@@ -76,8 +76,8 @@ function generateTeachingDate(startDate,endDate){
         let cell = document.createElement("td");
         let button = document.createElement("button")
         button.textContent = formatDate(date);
-        button.addEventListener("click",function(){
-            selectElement("list2",button);
+        button.addEventListener("click", function () {
+            selectElement("list2", button);
         })
         cell.appendChild(button);
         row.appendChild(cell);
@@ -105,7 +105,7 @@ function displayFilteredStudents(attendance_header, data) {
     const table = document.createElement("table");
 
     let header_row = document.createElement("tr");
-    attendance_header.forEach(function(cellData){
+    attendance_header.forEach(function (cellData) {
         let header_cell = document.createElement("th");
         header_cell.textContent = cellData;
         header_cell.style.width = "33%";
@@ -115,9 +115,9 @@ function displayFilteredStudents(attendance_header, data) {
 
     studentListDiv.appendChild(table);
 
-    data.forEach(function(rowData) {
+    data.forEach(function (rowData) {
         let row = document.createElement("tr");
-        rowData.slice(1).forEach(function(cellData){
+        rowData.slice(1).forEach(function (cellData) {
             let cell = document.createElement("td");
             cell.textContent = cellData;
             cell.style.width = "33%";
@@ -159,15 +159,15 @@ function selectElement(listId, button) {
     const selectedDateStr = selectedElements["list2"] ? selectedElements["list2"].textContent : null;
 
     if (selectedCourse && selectedDateStr) {
-        temp_attendance_data = attendance_data.filter(course => 
+        temp_attendance_data = attendance_data.filter(course =>
             course[0] === selectedCourse && compareDates(selectedDateStr, course[2]) === 0
         );
     } else if (selectedCourse) {
-        temp_attendance_data = attendance_data.filter(course => 
+        temp_attendance_data = attendance_data.filter(course =>
             course[0] === selectedCourse
         );
     } else if (selectedDateStr) {
-        temp_attendance_data = attendance_data.filter(course => 
+        temp_attendance_data = attendance_data.filter(course =>
             compareDates(selectedDateStr, course[2]) === 0
         );
     } else {
@@ -202,7 +202,7 @@ let teacherCourseData = document.getElementById("teacher_course_data");
 teacherCourseData.appendChild(generateTeacherCourseData(teacher_course));
 
 let attendanceData = document.getElementById("teacher_attendance_data");
-attendanceData.appendChild(generateAttendanceData(temp_attendance_data,attendance_header));
+attendanceData.appendChild(generateAttendanceData(temp_attendance_data, attendance_header));
 
 let teachingDate = document.getElementById("date_table_body");
-teachingDate.appendChild(generateTeachingDate(startDate,endDate));
+teachingDate.appendChild(generateTeachingDate(startDate, endDate));
