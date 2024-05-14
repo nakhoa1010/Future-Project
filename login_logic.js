@@ -1,17 +1,17 @@
 const users = [
     { username: "user1", password: "password1", role:"student" },
-    { username: "user2", password: "password2",role:"teacher" }
+    { username: "user2", password: "password2", role:"teacher" }
 ];
 
 function validateLogin(username, password) {
     const user = users.find(u => u.username === username && u.password === password);
     var role = null;
     if(user)
-        if(users.find(u => u.username === username && u.password === password && role == "student"))
+        if(users.find(u => u.username === username && u.password === password && u.role === "student"))
             role =  "student";
         else
             role = "teacher";
-    return [user !== undefined,null];
+    return [user !== undefined,role?role:null];
 }
 
 document.getElementById("login-form").addEventListener("submit", function(event) {
