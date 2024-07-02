@@ -1,7 +1,7 @@
 let users = [];
 
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('http://localhost/MyWebsite/Kiet/loginData.php')
+    fetch('loginData.php')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok ' + response.statusText);
