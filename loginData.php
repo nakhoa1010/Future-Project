@@ -1,10 +1,10 @@
 <?php
 header('Content-Type: application/json');
 
-$servername = "localhost";
-$userID = "root";
-$password = "";
-$dbname = "ce410";
+$servername = "103.18.6.82";
+$userID = "pck2uro1ax0t_ce410_admin";
+$password = "12345678_CE410";
+$dbname = "pck2uro1ax0t_ce410";
 
 // Create connection
 $conn = mysqli_connect($servername, $userID, $password, $dbname);
