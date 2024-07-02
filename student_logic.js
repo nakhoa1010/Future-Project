@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
     }
 
-    fetch(`http://localhost/MyWebsite/Kiet/fetchStudentInfo.php?userID=${userID}`)
+    fetch(`fetchStudentInfo.php?userID=${userID}`)
         .then(response => response.json())
         .then(data => {
             if (data.student_info && data.student_courses && data.attendance_data) {
